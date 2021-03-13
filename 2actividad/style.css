@@ -1,0 +1,16 @@
+*{
+    color: white;
+    /* background-color: rgb(53, 53, 53); */
+    background-color: rgb(124, 161, 211);
+    text-align: center;
+}
+
+textarea{
+    background-color: white;
+    color: black;
+}
+
+input{
+    background-color: white;
+    color: black;
+}
