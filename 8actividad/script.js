@@ -3,7 +3,8 @@ const mensaje = () => {
     let sexo = document.getElementById("sexo").value;
     mensajeBienvenida = ""
     
-    sexo == 1 ? mensajeBienvenida = `Bienvenida ${nombre}` : mensajeBienvenida = `Bienvenido ${nombre}`;
+    mensajeBienvenida = sexo == 1 ? `Bienvenida ${nombre}` :
+                                    `Bienvenido ${nombre}`;
     
     document.getElementById("resultado").innerHTML = mensajeBienvenida;
 }
