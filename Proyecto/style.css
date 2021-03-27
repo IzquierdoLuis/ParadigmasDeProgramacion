@@ -1,0 +1,32 @@
+*{
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1, h2, p{
+    color: #009879;
+}
+
+table{
+    margin: auto;
+}
+
+.content-table{
+    border-collapse: collapse;
+    border-radius: 15px 15px 0 0;
+    /* margin: 25px 0; */
+    min-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
