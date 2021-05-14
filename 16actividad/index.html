@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Actividad 16</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de productos</h1>
+        <p>
+            <input type="text" v-model="producto" @keyup.enter="agregar">
+            <button class="button" @click="agregar">agregar</button>
+        </p>
+
+        <ul v-for="producto in productos">
+            <li>
+                <h3>
+                    <input type="number" v-model.number="producto.cantidad">
+                    {{producto.nombre}} | {{producto.cantidad}}
+                    
+                    <button class="button" @click="producto.cantidad++">+</button>
+                    <button class="button" @click="producto.cantidad--">-</button>
+                    <span v-if="producto.cantidad <= 0"> sin stock</span>
+                </h3>
+            </li>
+        </ul>
+
+        <h2>Total: {{total}}</h2>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>

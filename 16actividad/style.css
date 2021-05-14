@@ -1,0 +1,25 @@
+:root{
+    background-color: white;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    background-color: #009879;
+    color: white;
+    border-radius: 7px;
+}
+
+h2, h3{
+    text-align: left;
+    color: #009879;
+}
+
+.button{
+    border-width: 0px;
+    margin-left: 4px;
+    border-radius: 7px;
+    background-color: #009879;;
+    color: white;
+}
